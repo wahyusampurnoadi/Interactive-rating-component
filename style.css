@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --background: #141519;
+  --primary-dark: #171e28;
+  --primary-light: #1e252f;
+  --orange: #fc7613;
+  --gray: #798999;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(23, 21, 29);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+#card {
+  width: 300px;
+  height: 280px;
+  background: linear-gradient(to right top, var(--primary-dark), var(--primary-light));
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 3px 3px 8px rgb(30, 30, 30);
+}
+
+#star {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-light);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 4px rgb(27, 27, 27);
+  margin-bottom: 20px;
+}
+
+#text {
+  margin-left: 10px;
+  margin-bottom: 18px;
+}
+
+#text h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+#text p {
+  opacity: 0.5;
+  font-size: 12px;
+  margin-top: 10px;
+  padding-right: 10px;
+}
+
+#button {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-num {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  border: none;
+  color: #888;
+  box-shadow: 2px 2px 4px rgb(27, 27, 27);
+}
+
+.btn-num:hover {
+  cursor: pointer;
+  background-color: var(--orange);
+  color: white;
+}
+
+button#submit {
+  margin: 24px 0 0 10px;
+  background-color: var(--orange);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  width: 280px;
+  height: 40px;
+  border-radius: 20px;
+  letter-spacing: 3px;
+  border: none;
+  box-shadow: 2px 2px 4px rgb(27, 27, 27);
+}
+
+button#submit:hover {
+  background-color: white;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--gray);
+  color: white;
+  cursor: pointer;
+}
